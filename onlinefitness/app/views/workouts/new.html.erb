@@ -1,4 +1,4 @@
-<h1>New workout</h1>
+<h1>New workout for <%=h @user.name %></h1>
 
 <% form_for([@user,@workout]) do |f| %>
   <%= f.error_messages %>
