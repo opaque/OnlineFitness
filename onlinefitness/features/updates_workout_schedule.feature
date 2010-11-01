@@ -14,7 +14,7 @@ Feature: Updates workout schedule
 		  And "workout_date" is "January 2, 2010"
 
 	Scenario: User edits existing workout schedule 
-		Given schedule 1 exists
+		Given user 1 exists
 		  And schedule 1 for user 1 exists
 		When I am on the edit workout schedule page for schedule 1 for user 1
 		  And I select "Triceps" from "workout_exercise"
