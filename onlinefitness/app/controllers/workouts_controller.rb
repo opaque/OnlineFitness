@@ -9,6 +9,33 @@ class WorkoutsController < ApplicationController
       format.xml  { render :xml => @workouts }
     end
   end
+  
+  def new_actual_data
+    @workout = Workout.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @workout }
+	end
+  end
+  
+  def edit_actual_data
+      @workout = Workout.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @workout }
+	end
+  end
+  
+  def show_actual_data
+      @workout = Workout.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @workout }
+	end
+  end
 
   # GET /workouts/1
   # GET /workouts/1.xml
@@ -76,7 +103,7 @@ class WorkoutsController < ApplicationController
     @workout.destroy
 
     respond_to do |format|
-      format.html { redirect_to(workouts_url) }
+      format.html { redirect_to(workouts_url, :notice => 'Workout was successfully removed.') }
       format.xml  { head :ok }
     end
   end

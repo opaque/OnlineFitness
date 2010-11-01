@@ -9,30 +9,25 @@
 </p>
 
 <p>
-  <b>Expected reps:</b>
+  <b>Expectedreps:</b>
   <%=h @workout.expectedreps %>
 </p>
 
 <p>
-  <b>Expected sets:</b>
+  <b>Expectedsets:</b>
   <%=h @workout.expectedsets %>
 </p>
 
-
-
 <p>
-<% if @workout.actualreps %>
-	<b>Completed reps:</b>
-	<%=h @workout.actualreps %>
-<% end %>
+  <b>Actualreps:</b>
+  <%=h @workout.actualreps %>
 </p>
 
 <p>
-<% if @workout.actualsets %>
-	<b>Completed sets:</b>
-	<%=h @workout.actualsets %>
-<% end %>
+  <b>Actualsets:</b>
+  <%=h @workout.actualsets %>
 </p>
+
 
 <%= link_to 'Edit', edit_workout_path(@workout) %> |
 <%= link_to 'Back', workouts_path %>

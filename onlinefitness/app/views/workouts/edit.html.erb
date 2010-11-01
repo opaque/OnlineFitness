@@ -4,37 +4,36 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :date %><br />
-    <%= f.datetime_select :date %>
+    <%= f.label "Date" %><br />
+    <%= f.datetime_select :date, :start_year => Date.today.year, :end_year => Date.today.year + 5, :discard_hour => true %>
   </p>
   <p>
-    <%= f.label :exercise %><br />
-    <%= f.text_field :exercise %>
+    <%= f.label "Exercise" %><br />
+    <%= f.select :exercise, %w{Biceps Triceps} %>
+
   </p>
   <p>
-    <%= f.label :expectedreps %><br />
+    <%= f.label "Expected reps" %><br />
     <%= f.text_field :expectedreps %>
   </p>
   <p>
-    <%= f.label :expectedsets %><br />
+    <%= f.label "Expected sets" %><br />
     <%= f.text_field :expectedsets %>
   </p>
   <p>
-    <%= f.label :actualreps %><br />
+    <%= f.label "Completed Reps" %><br />
     <%= f.text_field :actualreps %>
   </p>
   <p>
-    <%= f.label :actualsets %><br />
+    <%= f.label "Completed Sets" %><br />
     <%= f.text_field :actualsets %>
   </p>
-  <p>
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </p>
+
   <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
 
+<%= link_to 'Remove', @workout, :confirm => 'Are you sure?', :method => :delete %> |
 <%= link_to 'Show', @workout %> |
 <%= link_to 'Back', workouts_path %>

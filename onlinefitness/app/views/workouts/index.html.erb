@@ -8,7 +8,6 @@
     <th>Expectedsets</th>
     <th>Actualreps</th>
     <th>Actualsets</th>
-    <th>User</th>
   </tr>
 
 <% @workouts.each do |workout| %>
@@ -19,7 +18,6 @@
     <td><%=h workout.expectedsets %></td>
     <td><%=h workout.actualreps %></td>
     <td><%=h workout.actualsets %></td>
-    <td><%=h workout.user_id %></td>
     <td><%= link_to 'Show', workout %></td>
     <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
     <td><%= link_to 'Destroy', workout, :confirm => 'Are you sure?', :method => :delete %></td>

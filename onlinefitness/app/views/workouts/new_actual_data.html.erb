@@ -1,0 +1,37 @@
+<h1>Input Workout Data</h1>
+<p>
+  <b>Date:</b>
+  <%=h @workout.date %>
+</p>
+
+<p>
+  <b>Exercise:</b>
+  <%=h @workout.exercise %>
+</p>
+
+<p>
+  <b>Expectedreps:</b>
+  <%=h @workout.expectedreps %>
+</p>
+
+<p>
+  <b>Expectedsets:</b>
+  <%=h @workout.expectedsets %>
+</p>
+<% form_for(@workout) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :actualreps %><br />
+    <%= f.text_field :actualreps %>
+  </p>
+  <p>
+    <%= f.label :actualsets %><br />
+    <%= f.text_field :actualsets %>
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', workouts_path %>
