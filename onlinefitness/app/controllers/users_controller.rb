@@ -20,6 +20,15 @@ class UsersController < ApplicationController
       format.xml  { render :xml => @user }
     end
   end
+  
+  def calendar
+    @user = User.find(params[:id])
+
+    respond_to do |format|
+      format.html # calendar.html.erb
+      format.xml  { render :xml => @user }
+    end
+  end
 
   # GET /users/new
   # GET /users/new.xml
