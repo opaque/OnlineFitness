@@ -21,13 +21,13 @@ module NavigationHelpers
 	when /edit profile page for user (\d+)/ 
 	  '/users/' + $1 +'/edit'
 	when /the calendar page for user (\d+)/
-	  '/users/'+ $1 + 'calendar'
+	  '/users/'+ $1 + '/calendar'
 	when /the new profile page/
 	  '/users/new'
 	when /the profile page for user (\d+)/
 	  '/users/' + $1 + 'show'
 	when /the new workout schedule page for user (\d+)/
-	  'users/'+ $1 + '/workouts/new'
+	  '/users/'+ $1 + '/workouts/new'
 	
 	
 

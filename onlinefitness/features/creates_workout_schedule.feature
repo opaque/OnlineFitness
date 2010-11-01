@@ -5,7 +5,8 @@ Feature: Creates workout schedule
 	So that I can input workout data later
 	
 	Scenario: User inputs data in the workout schedule
-		Given I am on the new workout schedule page
+		Given user 1 exists
+		  And I am on the new workout schedule page for user 1
 		When I select "January 1, 2010" as the date
 		And I select "Biceps" from "workout_exercise"
 		And I fill in "workout_expectedreps" with "30"
