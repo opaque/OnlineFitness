@@ -59,8 +59,8 @@ describe Workout do
   end
 
   it "should create a new instance given valid attributes" do
-    @user.workouts.build(@valid_attributes).should be_true
-	
+    @workout = @user.workouts.build(@valid_attributes)
+	@workout.should be_valid
   end
   
   
@@ -68,21 +68,25 @@ describe Workout do
 	describe "when creating a workout" do
 
 		it "should create a new workout without actualsets and actualreps" do
-			@user.workouts.build(@valid_attr_without_actual_data).should be_true
+			@workout = @user.workouts.build(@valid_attr_without_actual_data)
+			@workout.should be_valid
 		end
 		
 		it "should NOT create a new workout without a date" do	
-			@user.workouts.build(@null_date_attr).should_not be_true
+			@workout = @user.workouts.build(@null_date_attr)
+			@workout.should_not be_valid
 		end
 		
 		it "should flash a notice saying 'Arguments are invalid' when a it fails to create a new workout"
 		
 		it "should NOT create a new workout without an expected reps argument" do
-			@user.workouts.build(@null_expectedreps_attr).should_not be_true
+			@workout = @user.workouts.build(@null_expectedreps_attr)
+			@workout.should_not be_valid
 		end
 		
 		it "should NOT create a new workout when given an invalid expected reps argument" do
-			@user.workouts.build(@invlaid_expectedreps_attr).should_not be_true
+			@workout = @user.workouts.build(@invlaid_expectedreps_attr)
+			@workout.should_not be_valid
 		end
 	end
 	
@@ -97,16 +101,19 @@ describe Workout do
 		it "should update the movie when not given data for actualreps and actualsets" do
 			@workout = @user.workouts.build(@valid_attr_without_actual_data)
 			@workout.update_attributes(@valid_attr_without_actual_data)
+			@workout.should be_valid
 		end
 		
 		it "should flash a notice saying 'Arguments are invalid' when an update fails"
 		
 		it "should not update when the movie is updated with invalid data" do
-			@user.workouts.build(@invalid_expectedreps_attr).should_not be_true
+			@workout = @user.workouts.build(@invalid_expectedreps_attr)
+			@workout.should_not be_valid
 		end
 		
 		it "should not update when the movie is updated with invalid actual data in actualreps" do
-			@user.workouts.build(@invalid_actualsets_attr).should_not be_true
+			@workout = @user.workouts.build(@invalid_actualsets_attr)
+			@workout.should_not be_valid
 		end
 		
 	end
