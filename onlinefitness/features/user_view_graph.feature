@@ -10,6 +10,6 @@ Feature: User views graph
 		Then I should see my workout data presented on the default graph
 		
 	Scenario: User chooses to view alternative graph
-		Given I am on the graph tab
+		Given I am in the graph tab
 		When I click on an alternative graph link
 		Then I should see my workout data presented in that format
