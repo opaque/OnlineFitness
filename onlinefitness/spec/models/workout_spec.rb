@@ -95,7 +95,7 @@ describe Workout do
 		it "should update the movie when given actual data" do
 			@workout = @user.workouts.build(@valid_attr_without_actual_data)
 			@workout.update_attributes(@valid_attributes)
-			(@workout.actualsets == @valid_attributes.actualsets and @workout.actualreps == @valid_attributes.actualreps).should be_true
+			(@workout[:actualsets] == @valid_attributes[:actualsets] and @workout[:actualreps] == @valid_attributes[:actualreps]).should be_true
 		end
 		
 		it "should update the movie when not given data for actualreps and actualsets" do
