@@ -1,0 +1,84 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-family: "lucida grande", tahoma, verdana, arial;
+	font-size: 11px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 800px;
+	text-align: left;
+}
+
+#nav-container {
+	margin: 0 auto;
+	position: relative
+}
+#title {
+	width: 800px;
+	min-height: 50px;
+	text-align: center;
+	background-color: gray;
+}
+#welcome {
+	min-height: 20px;
+	background-color: brown;
+}
+#input {
+	min-height: 400px;
+	background-color: pink;
+}
+#navbar {
+	min-height: 20px;
+	background-color: orange;
+}
+#content {
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	text-align: left;
+} 
+
+#leftcol  {
+	float: left;
+	width: 200px;
+	min-height: 400px;
+	background-color: blue;
+}
+#display {
+	float: right;
+	width: 600px;
+	min-height: 400px;
+	background-color: green;
+}	
+
+#description {
+	float: left;
+	width: 600px;
+	min-height: 400px;
+	background-color: yellow;
+}
+
+#login {
+	float: right;
+	width: 200px;
+	min-height: 400px;
+	background-color: purple;
+}
+
+#footer {
+	width: 800px;
+	min-height: 20px;
+	background-color: red;
+}
+
+#navbar{
+	margin: 0;
+	width: auto;
+}
+
+.clear {
+	clear: both;
+}
