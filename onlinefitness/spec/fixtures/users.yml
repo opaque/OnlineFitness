@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  birthday: 2010-10-31 18:01:52
+  weight: 1
+  height: 1
+  gender: MyString
+
+two:
+  name: MyString
+  birthday: 2010-10-31 18:01:52
+  weight: 1
+  height: 1
+  gender: MyString

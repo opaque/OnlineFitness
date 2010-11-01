@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%=h @user.birthday %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @user.weight %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @user.height %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%=h @user.gender %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
