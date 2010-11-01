@@ -10,13 +10,13 @@ describe Workout do
       :actualreps => 1,
       :actualsets => 1
     }
-	@valid_attr_without_actual_data {
+	@valid_attr_without_actual_data = {
 		:date => Time.now,
 		:exercise => "value for exercise",
 		:expectedreps => 1,
 		:expectedsets => 1,
 	}
-	@null_date_attr {
+	@null_date_attr  = {
 		:date => nil,
 		:exercise => "value for exercise",
 		:expectedreps => 1,
@@ -50,6 +50,10 @@ describe Workout do
 			@workout.update_attributes(@valid_attributes)
 			(@workout.actualsets == @valid_attributes.actualsets and @workout.actualreps == @valid_attributes.actualreps).should be_true
 		end
+		
+		
 	end
+	
+	
  
 end
