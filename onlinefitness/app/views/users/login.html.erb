@@ -1,0 +1,18 @@
+<h1>Login Page</h1>
+
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "Login Name" %><br />
+    <%= f.text_field :name %>
+  </p>
+	
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<p> This is the login page. Please enter a user name and you can create a new test account for use with this application. </p>
+
