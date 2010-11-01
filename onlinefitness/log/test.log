@@ -1,0 +1,218 @@
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-10-31 18:22:24) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users/37]
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2010-10-31 18:22:24) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-10-31 18:22:24) [PUT]
+  Parameters: {"id"=>"37", "user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-10-31 18:22:24) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-10-31 18:22:24) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-10-31 18:22:24) [PUT]
+  Parameters: {"id"=>"37", "user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users/37?user%5Bthese%5D=params]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-10-31 18:22:24) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1007
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#update (for 0.0.0.0 at 2010-10-31 18:22:24) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1008
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users/1]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-10-31 18:22:24) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-10-31 18:22:24) [POST]
+  Parameters: {"user"=>{}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/users?]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-10-31 18:22:24) [POST]
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1011
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?user%5Bthese%5D=params]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-10-31 18:22:24) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/users?]
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2010-10-31 18:22:24) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/37/edit]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-10-31 18:22:24) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-10-31 18:22:24) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/users
+Rendering users/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users/37]
+
+
+Processing UsersController#index (for 0.0.0.0 at 2010-10-31 18:22:24) [GET]
+Rendering template within layouts/users
+Rendering users/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/users]
+  [4;36;1mUser Create (1.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('value for name', '2010-11-01 01:22:24', '2010-11-01 01:22:24', 1, 'value for gender', '2010-11-01 01:22:24', 1)[0m
+Rendering users/show.html.erb
+Rendering users/new.html.erb
+Rendering users/index.html.erb
+Rendering users/edit.html.erb
+  [4;35;1mWorkout Create (2.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, 1, '2010-11-01 01:22:24', '2010-11-01 01:22:24', '2010-11-01 01:22:24', 1, 'value for exercise', 1, 1)[0m
+Rendering workouts/edit.html.erb
+Rendering workouts/index.html.erb
+Rendering workouts/new.html.erb
+
+
+Processing WorkoutsController#destroy (for 0.0.0.0 at 2010-10-31 18:22:25) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/workouts
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/workouts/37]
+
+
+Processing WorkoutsController#destroy (for 0.0.0.0 at 2010-10-31 18:22:25) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/workouts
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/workouts/1]
+
+
+Processing WorkoutsController#update (for 0.0.0.0 at 2010-10-31 18:22:25) [PUT]
+  Parameters: {"id"=>"37", "workout"=>{"these"=>"params"}}
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts/37?workout%5Bthese%5D=params]
+
+
+Processing WorkoutsController#update (for 0.0.0.0 at 2010-10-31 18:22:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts/1]
+
+
+Processing WorkoutsController#update (for 0.0.0.0 at 2010-10-31 18:22:25) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts/1]
+
+
+Processing WorkoutsController#update (for 0.0.0.0 at 2010-10-31 18:22:25) [PUT]
+  Parameters: {"id"=>"37", "workout"=>{"these"=>"params"}}
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts/37?workout%5Bthese%5D=params]
+
+
+Processing WorkoutsController#update (for 0.0.0.0 at 2010-10-31 18:22:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/workouts/1032
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/workouts/1]
+
+
+Processing WorkoutsController#update (for 0.0.0.0 at 2010-10-31 18:22:25) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/workouts/1033
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/workouts/1]
+
+
+Processing WorkoutsController#create (for 0.0.0.0 at 2010-10-31 18:22:25) [POST]
+  Parameters: {"workout"=>{"these"=>"params"}}
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts?workout%5Bthese%5D=params]
+
+
+Processing WorkoutsController#create (for 0.0.0.0 at 2010-10-31 18:22:25) [POST]
+  Parameters: {"workout"=>{}}
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts?]
+
+
+Processing WorkoutsController#create (for 0.0.0.0 at 2010-10-31 18:22:25) [POST]
+  Parameters: {"workout"=>{"these"=>"params"}}
+Redirected to http://test.host/workouts/1036
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/workouts?workout%5Bthese%5D=params]
+
+
+Processing WorkoutsController#create (for 0.0.0.0 at 2010-10-31 18:22:25) [POST]
+  Parameters: {"workout"=>{}}
+Redirected to http://test.host/workouts/1037
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/workouts?]
+
+
+Processing WorkoutsController#edit (for 0.0.0.0 at 2010-10-31 18:22:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts/37/edit]
+
+
+Processing WorkoutsController#new (for 0.0.0.0 at 2010-10-31 18:22:25) [GET]
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts/new]
+
+
+Processing WorkoutsController#show (for 0.0.0.0 at 2010-10-31 18:22:25) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/workouts/37]
+
+
+Processing WorkoutsController#index (for 0.0.0.0 at 2010-10-31 18:22:25) [GET]
+Rendering template within layouts/workouts
+Rendering workouts/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/workouts]
+Rendering workouts/show.html.erb
