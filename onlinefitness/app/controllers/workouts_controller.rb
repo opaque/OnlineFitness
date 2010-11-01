@@ -17,32 +17,7 @@ class WorkoutsController < ApplicationController
     end
   end
   
-  def new_actual_data
-    @workout = Workout.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @workout }
-	end
-  end
-  
-  def edit_actual_data
-      @workout = Workout.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @workout }
-	end
-  end
-  
-  def show_actual_data
-      @workout = Workout.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @workout }
-	end
-  end
 
   # GET /workouts/1
   # GET /workouts/1.xml
