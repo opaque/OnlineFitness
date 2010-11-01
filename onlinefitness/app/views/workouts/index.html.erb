@@ -18,13 +18,14 @@
     <td><%=h workout.expectedsets %></td>
     <td><%=h workout.actualreps %></td>
     <td><%=h workout.actualsets %></td>
-    <td><%= link_to 'Show', workout %></td>
-    <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
-    <td><%= link_to 'Destroy', workout, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', [@user, workout] %></td>
+    <td><%= link_to 'Edit', edit_user_workout_path(@user,workout) %></td>
+    <td><%= link_to 'Destroy', [@user, workout], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New workout', new_workout_path %>
+<%= link_to 'New workout', new_user_workout_path(@user) %>
+<%= link_to 'Back', @user %>

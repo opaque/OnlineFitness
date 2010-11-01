@@ -1,6 +1,6 @@
 <h1>Editing workout</h1>
 
-<% form_for(@workout) do |f| %>
+<% form_for([@user,@workout]) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -34,6 +34,6 @@
   </p>
 <% end %>
 
-<%= link_to 'Remove', @workout, :confirm => 'Are you sure?', :method => :delete %> |
-<%= link_to 'Show', @workout %> |
-<%= link_to 'Back', workouts_path %>
+<%= link_to 'Remove', [@user, @workout], :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Show', [@user, @workout] %> |
+<%= link_to 'Back', user_workouts_path(@user) %>

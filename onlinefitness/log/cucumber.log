@@ -211,3 +211,226 @@ Processing UsersController#new (for 127.0.0.1 at 2010-10-31 18:40:56) [GET]
 Rendering template within layouts/users
 Rendering users/new
 Completed in 66ms (View: 63, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: GET /workouts/new with {} and HTTP headers {}
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 18:47:51) [GET]
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 5923ms (View: 5920, DB: 0) | 200 OK [http://www.example.com/workouts/new]
+REQUESTING PAGE: POST /workouts with {"commit"=>"Create", "workout"=>{"expectedsets"=>"3", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "exercise"=>"Biceps"}} and HTTP headers {"HTTP_REFERER"=>"/workouts/new"}
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 18:47:57) [POST]
+  Parameters: {"commit"=>"Create", "workout"=>{"expectedsets"=>"3", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "exercise"=>"Biceps"}}
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(3, NULL, '2010-11-01 01:47:57', '2010-11-01 01:47:57', '2010-01-01 00:00:00', 30, 'Biceps', NULL, NULL)[0m
+Redirected to http://www.example.com/workouts/1
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/workouts]
+REQUESTING PAGE: GET http://www.example.com/workouts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/workouts"}
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 18:47:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/workouts/1]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:47:57', '2010-11-01 01:47:57', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /workouts/1/edit with {} and HTTP headers {}
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 18:47:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 59ms (View: 58, DB: 1) | 200 OK [http://www.example.com/workouts/1/edit]
+REQUESTING PAGE: DELETE /workouts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/workouts/1/edit"}
+
+
+Processing WorkoutsController#destroy (for 127.0.0.1 at 2010-10-31 18:47:58) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+  [4;35;1mWorkout Destroy (0.0ms)[0m   [0mDELETE FROM "workouts" WHERE "id" = 1[0m
+Redirected to http://www.example.com/workouts
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/workouts/1]
+REQUESTING PAGE: GET http://www.example.com/workouts with {} and HTTP headers {"HTTP_REFERER"=>"/workouts/1"}
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 18:47:58) [GET]
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/workouts]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mWorkout Create (1.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:47:58', '2010-11-01 01:47:58', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /workouts/1/edit with {} and HTTP headers {}
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 18:47:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://www.example.com/workouts/1/edit]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mWorkout Create (1.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:47:58', '2010-11-01 01:47:58', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /workouts/1/edit with {} and HTTP headers {}
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 18:47:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://www.example.com/workouts/1/edit]
+REQUESTING PAGE: POST /workouts/1 with {"commit"=>"Update", "_method"=>"put", "workout"=>{"actualsets"=>"", "expectedsets"=>"3", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "actualreps"=>"", "exercise"=>"Triceps"}} and HTTP headers {"HTTP_REFERER"=>"/workouts/1/edit"}
+
+
+Processing WorkoutsController#update (for 127.0.0.1 at 2010-10-31 18:47:58) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"1", "workout"=>{"expectedsets"=>"3", "actualsets"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "exercise"=>"Triceps", "actualreps"=>""}}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+  [4;36;1mWorkout Update (0.0ms)[0m   [0;1mUPDATE "workouts" SET "updated_at" = '2010-11-01 01:47:58', "expectedsets" = 3, "exercise" = 'Triceps', "date" = '2010-01-01 00:00:00', "expectedreps" = 30 WHERE "id" = 1[0m
+Redirected to http://www.example.com/workouts/1
+Completed in 5ms (DB: 0) | 302 Found [http://www.example.com/workouts/1]
+REQUESTING PAGE: GET http://www.example.com/workouts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/workouts/1"}
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 18:47:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/workouts/1]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:47:58', '2010-11-01 01:47:58', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mWorkout Create (1.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:47:58', '2010-11-01 01:47:58', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-31 18:47:58) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 16ms (View: 14, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: GET /workouts/new with {} and HTTP headers {}
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 18:49:56) [GET]
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 6005ms (View: 6001, DB: 0) | 200 OK [http://www.example.com/workouts/new]
+REQUESTING PAGE: POST /workouts with {"commit"=>"Create", "workout"=>{"expectedsets"=>"3", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "exercise"=>"Biceps"}} and HTTP headers {"HTTP_REFERER"=>"/workouts/new"}
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 18:50:02) [POST]
+  Parameters: {"commit"=>"Create", "workout"=>{"expectedsets"=>"3", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "exercise"=>"Biceps"}}
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(3, NULL, '2010-11-01 01:50:02', '2010-11-01 01:50:02', '2010-01-01 00:00:00', 30, 'Biceps', NULL, NULL)[0m
+Redirected to http://www.example.com/workouts/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/workouts]
+REQUESTING PAGE: GET http://www.example.com/workouts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/workouts"}
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/workouts/1]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:50:02', '2010-11-01 01:50:02', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /workouts/1/edit with {} and HTTP headers {}
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 60ms (View: 59, DB: 1) | 200 OK [http://www.example.com/workouts/1/edit]
+REQUESTING PAGE: DELETE /workouts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/workouts/1/edit"}
+
+
+Processing WorkoutsController#destroy (for 127.0.0.1 at 2010-10-31 18:50:02) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+  [4;35;1mWorkout Destroy (0.0ms)[0m   [0mDELETE FROM "workouts" WHERE "id" = 1[0m
+Redirected to http://www.example.com/workouts
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/workouts/1]
+REQUESTING PAGE: GET http://www.example.com/workouts with {} and HTTP headers {"HTTP_REFERER"=>"/workouts/1"}
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://www.example.com/workouts]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mWorkout Create (1.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:50:02', '2010-11-01 01:50:02', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /workouts/1/edit with {} and HTTP headers {}
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://www.example.com/workouts/1/edit]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mWorkout Create (0.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:50:02', '2010-11-01 01:50:02', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /workouts/1/edit with {} and HTTP headers {}
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://www.example.com/workouts/1/edit]
+REQUESTING PAGE: POST /workouts/1 with {"commit"=>"Update", "_method"=>"put", "workout"=>{"actualsets"=>"", "expectedsets"=>"3", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "actualreps"=>"", "exercise"=>"Triceps"}} and HTTP headers {"HTTP_REFERER"=>"/workouts/1/edit"}
+
+
+Processing WorkoutsController#update (for 127.0.0.1 at 2010-10-31 18:50:02) [PUT]
+  Parameters: {"commit"=>"Update", "id"=>"1", "workout"=>{"expectedsets"=>"3", "actualsets"=>"", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"1", "expectedreps"=>"30", "exercise"=>"Triceps", "actualreps"=>""}}
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+  [4;36;1mWorkout Update (0.0ms)[0m   [0;1mUPDATE "workouts" SET "updated_at" = '2010-11-01 01:50:02', "expectedsets" = 3, "exercise" = 'Triceps', "date" = '2010-01-01 00:00:00', "expectedreps" = 30 WHERE "id" = 1[0m
+Redirected to http://www.example.com/workouts/1
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/workouts/1]
+REQUESTING PAGE: GET http://www.example.com/workouts/1 with {} and HTTP headers {"HTTP_REFERER"=>"/workouts/1"}
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/workouts/1]
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:50:02', '2010-11-01 01:50:02', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mWorkout Create (1.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 01:50:02', '2010-11-01 01:50:02', '2010-01-02 00:00:00', 5, 'biceps', NULL, NULL)[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 17ms (View: 14, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Create", "user"=>{"name"=>"John Smith", "birthday(1i)"=>"1980", "birthday(2i)"=>"3", "birthday(3i)"=>"28", "weight"=>"150", "gender"=>"Male", "height"=>"70"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-31 18:50:02) [POST]
+  Parameters: {"commit"=>"Create", "user"=>{"name"=>"John Smith", "birthday(1i)"=>"1980", "birthday(2i)"=>"3", "birthday(3i)"=>"28", "weight"=>"150", "gender"=>"Male", "height"=>"70"}}
+  [4;36;1mUser Create (2.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('John Smith', '2010-11-01 01:50:02', '2010-11-01 01:50:02', 150, 'Male', '1980-03-28 00:00:00', 70)[0m
+Redirected to http://www.example.com/users/1
+Completed in 11ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 18:50:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users/1]

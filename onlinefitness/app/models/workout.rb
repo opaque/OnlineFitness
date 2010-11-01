@@ -1,5 +1,7 @@
 class Workout < ActiveRecord::Base
 
+	belongs_to :user
+	
 	validates_presence_of :date
 	validates_presence_of :exercise
 	validates_presence_of :expectedreps

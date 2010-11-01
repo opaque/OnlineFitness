@@ -4,24 +4,24 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
+    <%= f.label "Name" %><br />
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :birthday %><br />
-    <%= f.datetime_select :birthday %>
+    <%= f.label "Birthday" %><br />
+    <%= f.datetime_select :birthday, :start_year => Date.today.year, :end_year => Date.today.year - 100, :discard_hour => true %>
   </p>
   <p>
-    <%= f.label :weight %><br />
+    <%= f.label "Weight" %><br />
     <%= f.text_field :weight %>
   </p>
   <p>
-    <%= f.label :height %><br />
+    <%= f.label "Height" %><br />
     <%= f.text_field :height %>
   </p>
   <p>
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+    <%= f.label "Gender" %><br />
+    <%= f.select :gender, %w{Male Female} %>
   </p>
   <p>
     <%= f.submit 'Create' %>

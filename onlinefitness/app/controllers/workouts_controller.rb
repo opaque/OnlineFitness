@@ -1,8 +1,15 @@
 class WorkoutsController < ApplicationController
+
+  before_filter :get_user
+  
+  def get_user
+	@user = User.find(params[:user_id])
+  end
+
   # GET /workouts
   # GET /workouts.xml
   def index
-    @workouts = Workout.all
+    @workouts = @user.workouts
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,7 +47,7 @@ class WorkoutsController < ApplicationController
   # GET /workouts/1
   # GET /workouts/1.xml
   def show
-    @workout = Workout.find(params[:id])
+    @workout = @user.workouts.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -51,7 +58,7 @@ class WorkoutsController < ApplicationController
   # GET /workouts/new
   # GET /workouts/new.xml
   def new
-    @workout = Workout.new
+    @workout = @user.workouts.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -61,17 +68,17 @@ class WorkoutsController < ApplicationController
 
   # GET /workouts/1/edit
   def edit
-    @workout = Workout.find(params[:id])
+    @workout = @user.workouts.find(params[:id])
   end
 
   # POST /workouts
   # POST /workouts.xml
   def create
-    @workout = Workout.new(params[:workout])
+    @workout = @user.workouts.build(params[:workout])
 
     respond_to do |format|
       if @workout.save
-        format.html { redirect_to(@workout, :notice => 'Workout was successfully created.') }
+        format.html { redirect_to([@user, @workout], :notice => 'Workout was successfully created.') }
         format.xml  { render :xml => @workout, :status => :created, :location => @workout }
       else
         format.html { render :action => "new" }
@@ -83,11 +90,11 @@ class WorkoutsController < ApplicationController
   # PUT /workouts/1
   # PUT /workouts/1.xml
   def update
-    @workout = Workout.find(params[:id])
+    @workout = @user.workouts.find(params[:id])
 
     respond_to do |format|
       if @workout.update_attributes(params[:workout])
-        format.html { redirect_to(@workout, :notice => 'Workout was successfully updated.') }
+        format.html { redirect_to([@user, @workout], :notice => 'Workout was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -99,11 +106,11 @@ class WorkoutsController < ApplicationController
   # DELETE /workouts/1
   # DELETE /workouts/1.xml
   def destroy
-    @workout = Workout.find(params[:id])
+    @workout = @user.workouts.find(params[:id])
     @workout.destroy
 
     respond_to do |format|
-      format.html { redirect_to(workouts_url, :notice => 'Workout was successfully removed.') }
+      format.html { redirect_to(user_workouts_path(@user), :notice => 'Workout was successfully removed.') }
       format.xml  { head :ok }
     end
   end
