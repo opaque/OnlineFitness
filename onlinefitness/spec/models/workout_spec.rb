@@ -117,7 +117,14 @@ describe Workout do
 		end
 		
 	end
-	
+	describe "when destroying a workout" do
+	  it "should destroy a workout" do 
+	    @workout = @user.workouts.build(@invalid_expectedreps_attr)
+		workout_id = @workout.id
+		@workout.destroy
+		 lambda { Workout.find(workout_id) }.should raise_error(ActiveRecord::RecordNotFound)
+	  end
+	end
 	
  
 end
