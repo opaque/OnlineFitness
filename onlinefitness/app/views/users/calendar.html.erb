@@ -1,22 +1,76 @@
 
-
-Sunday
+<p>
+<%= "Sunday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Sunday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
 <%= link_to 'Add Sunday', new_user_workout_path(@user) %>
+</p>
 
-Monday
+<p>
+<%= "Monday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Sunday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
+
 <%= link_to 'Add Monday', new_user_workout_path(@user) %>
 <%= link_to 'Edit Monday', edit_user_workout_path(@user,@workout) %> 
+</p>
 
-Tuesday
+<p>
+<%= "Tuesday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Tuesday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
 <%= link_to 'Add Tuesday', new_user_workout_path(@user) %>
-Wednesday
+</p>
+
+<p>
+<%= "Wednesday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Wednesday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
 <%= link_to 'Add Wednesday', new_user_workout_path(@user) %>
-Thursday
+</p>
+
+<p>
+<%= "Thursday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Thursday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
 <%= link_to 'Add Thursday', new_user_workout_path(@user) %>
-Friday
+</p>
+
+<p>
+<%= "Friday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Friday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
 <%= link_to 'Add Friday', new_user_workout_path(@user) %>
-Saturday
+</p>
+
+<p>
+<%= "Saturday" %>
+<% @user.workouts.each do |workout|  %>
+	<% if workout.date.strftime("%A") == "Saturday" %>
+		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
+	<% end %>
+<% end %>
+
 <%= link_to 'Add Saturday', new_user_workout_path(@user) %>
+</p>
 
 <%= link_to 'Back', @user %>
 
