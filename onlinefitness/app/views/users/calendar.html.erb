@@ -12,7 +12,7 @@
 <p>
 <%= "Monday" %>
 <% @user.workouts.each do |workout|  %>
-	<% if workout.date.strftime("%A") == "Sunday" %>
+	<% if workout.date.strftime("%A") == "Monday" %>
 		<%= link_to workout.date, edit_user_workout_path(@user, workout) %>
 	<% end %>
 <% end %>
