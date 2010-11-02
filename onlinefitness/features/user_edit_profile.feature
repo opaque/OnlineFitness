@@ -1,5 +1,5 @@
 
-Feature: User input profile
+Feature: User edit profile
 
 	As a user
 	I can view and edit my profile data

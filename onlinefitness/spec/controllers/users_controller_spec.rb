@@ -21,6 +21,14 @@ describe UsersController do
       assigns[:user].should equal(mock_user)
     end
   end
+  
+  describe "GET calendar" do
+    it "assigns the requested user as @user" do
+      User.stub(:find).with("37").and_return(mock_user)
+      get :calendar, :id => "37"
+      assigns[:user].should equal(mock_user)
+    end
+  end
 
   describe "GET new" do
     it "assigns a new user as @user" do

@@ -20,7 +20,7 @@ describe "/users/new.html.erb" do
       with_tag("input#user_name[name=?]", "user[name]")
       with_tag("input#user_weight[name=?]", "user[weight]")
       with_tag("input#user_height[name=?]", "user[height]")
-      with_tag("input#user_gender[name=?]", "user[gender]")
+      with_tag("select#user_gender[name=?]", "user[gender]")
     end
   end
 end

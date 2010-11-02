@@ -16,10 +16,4 @@ Feature: User views personal calendar
 		When I follow "Add Monday" 
 		Then I should be on the new workout schedule page for user 1
 		
-	Scenario: User clicks personal calendar to edit workout
-		Given user 1 exists
-		And schedule 1 for user 1 exists
-		And I am on the calendar page for user 1
-		When I follow "Edit Monday"
-		Then I should be on edit workout schedule page for schedule 1 for user 1
 		
