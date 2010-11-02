@@ -3,31 +3,31 @@ require 'spec_helper'
 describe WorkoutsController do
   describe "routing" do
     it "recognizes and generates #index" do
-      { :get => "/workouts" }.should route_to(:controller => "workouts", :action => "index")
+      { :get => "/users/1/workouts" }.should route_to(:controller => "workouts", :action => "index", :user_id => "1")
     end
 
     it "recognizes and generates #new" do
-      { :get => "/workouts/new" }.should route_to(:controller => "workouts", :action => "new")
+      { :get => "/users/1/workouts/new" }.should route_to(:controller => "workouts", :action => "new", :user_id => "1")
     end
 
     it "recognizes and generates #show" do
-      { :get => "/workouts/1" }.should route_to(:controller => "workouts", :action => "show", :id => "1")
+      { :get => "/users/1/workouts/1" }.should route_to(:controller => "workouts", :action => "show", :id => "1", :user_id => "1")
     end
 
     it "recognizes and generates #edit" do
-      { :get => "/workouts/1/edit" }.should route_to(:controller => "workouts", :action => "edit", :id => "1")
+      { :get => "/users/1/workouts/1/edit" }.should route_to(:controller => "workouts", :action => "edit", :id => "1", :user_id => "1")
     end
 
     it "recognizes and generates #create" do
-      { :post => "/workouts" }.should route_to(:controller => "workouts", :action => "create") 
+      { :post => "/users/1/workouts" }.should route_to(:controller => "workouts", :action => "create", :user_id => "1") 
     end
 
     it "recognizes and generates #update" do
-      { :put => "/workouts/1" }.should route_to(:controller => "workouts", :action => "update", :id => "1") 
+      { :put => "/users/1/workouts/1" }.should route_to(:controller => "workouts", :action => "update", :id => "1", :user_id => "1") 
     end
 
     it "recognizes and generates #destroy" do
-      { :delete => "/workouts/1" }.should route_to(:controller => "workouts", :action => "destroy", :id => "1") 
+      { :delete => "/users/1/workouts/1" }.should route_to(:controller => "workouts", :action => "destroy", :id => "1", :user_id => "1") 
     end
   end
 end
