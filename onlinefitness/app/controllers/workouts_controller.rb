@@ -53,7 +53,7 @@ class WorkoutsController < ApplicationController
 
     respond_to do |format|
       if @workout.save
-        format.html { redirect_to([@user, @workout], :notice => 'Workout was successfully created.') }
+        format.html { redirect_to(calendar_path(@user), :notice => 'Workout was successfully created.') }
         format.xml  { render :xml => @workout, :status => :created, :location => @workout }
       else
         format.html { render :action => "new" }
