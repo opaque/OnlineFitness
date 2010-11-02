@@ -1,9 +1,5 @@
 (in C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness)
-** Invoke spec:rcov (first_time)
-** Invoke spec:clobber_rcov (first_time)
-** Execute spec:clobber_rcov
-** Execute spec:rcov
-...........................................*******************.*...*....*...
+..........................*******************.*...*....*....................
 
 Pending:
 
@@ -73,6 +69,21 @@ Workout when updating a workout should flash a notice saying 'Arguments are inva
 Workout when creating a workout should flash a notice saying 'Arguments are invalid' when a it fails to create a new workout (Not Yet Implemented)
 ./spec/models/workout_spec.rb:80
 
-Finished in 4.213 seconds
+Finished in 4.185 seconds
 
 76 examples, 0 failures, 22 pending
++----------------------------------------------------+-------+-------+--------+
+|                  File                              | Lines |  LOC  |  COV   |
++----------------------------------------------------+-------+-------+--------+
+|app/controllers/application_controller.rb           |    10 |     4 | 100.0% |
+|app/controllers/users_controller.rb                 |   103 |    72 |  90.3% |
+|app/controllers/workouts_controller.rb              |    92 |    62 |  16.1% |
+|app/helpers/application_helper.rb                   |     3 |     2 | 100.0% |
+|app/helpers/users_helper.rb                         |     2 |     2 | 100.0% |
+|app/helpers/workouts_helper.rb                      |     2 |     2 | 100.0% |
+|app/models/user.rb                                  |     6 |     6 | 100.0% |
+|app/models/workout.rb                               |    14 |    11 | 100.0% |
++----------------------------------------------------+-------+-------+--------+
+|Total                                               |   232 |   161 |  63.4% |
++----------------------------------------------------+-------+-------+--------+
+63.4%   8 file(s)   232 Lines   161 LOC
