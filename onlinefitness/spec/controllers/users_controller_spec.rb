@@ -29,6 +29,8 @@ describe UsersController do
       assigns[:user].should equal(mock_user)
     end
   end
+  
+  
 
   describe "GET new" do
     it "assigns a new user as @user" do

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>app/models/workout.rb</title>
+    <title>C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/initializers/session_store.rb</title>
     <link href="screen.css" media="all" rel="stylesheet" type="text/css" />
     <link href="print.css" media="print" rel="stylesheet" type="text/css" />
     
@@ -9,8 +9,8 @@
     <script type="text/javascript" src="rcov.js"></script>
   </head>
   <body>
-    <h1>Onlinefitness C0 Coverage Information - RCov</h1>
-    <h2>app/models/workout.rb</h2>
+    <h1>Spec C0 Coverage Information - RCov</h1>
+    <h2>C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/initializers/session_store.rb</h2>
 
     
 
@@ -27,9 +27,9 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left_align"><a href="app-models-workout_rb.html">app/models/workout.rb</a></td>
-            <td class='right_align'><tt>14</tt></td>
-            <td class='right_align'><tt>11</tt></td>
+            <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-initializers-session_store_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/initializers/session_store.rb</a></td>
+            <td class='right_align'><tt>15</tt></td>
+            <td class='right_align'><tt>4</tt></td>
             <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
           <div class="percent_graph">
             <div class="covered" style="width:100px"></div>
@@ -56,8 +56,8 @@
         
           
           
-          <tr class="marked">
-            <td><pre><a name="line1">1</a> class Workout &lt; ActiveRecord::Base</pre></td>
+          <tr class="inferred">
+            <td><pre><a name="line1">1</a> # Be sure to restart your server when you modify this file.</pre></td>
           </tr>
         
           
@@ -68,80 +68,86 @@
         
           
           
-          <tr class="marked">
-            <td><pre><a name="line3">3</a> 	belongs_to :user</pre></td>
+          <tr class="inferred">
+            <td><pre><a name="line3">3</a> # Your secret key for verifying cookie session data integrity.</pre></td>
           </tr>
         
           
           
           <tr class="inferred">
-            <td><pre><a name="line4">4</a> 	</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line5">5</a> 	validates_presence_of :date</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line6">6</a> 	validates_presence_of :exercise</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line7">7</a> 	validates_presence_of :expectedreps</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line8">8</a> 	validates_presence_of :expectedsets</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line9">9</a> 	validates_numericality_of :expectedreps</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line10">10</a> 	validates_numericality_of :expectedsets</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line11">11</a> 	validates_numericality_of :actualreps, :allow_nil =&gt; true</pre></td>
-          </tr>
-        
-          
-          
-          <tr class="marked">
-            <td><pre><a name="line12">12</a> 	validates_numericality_of :actualsets, :allow_nil =&gt; true</pre></td>
+            <td><pre><a name="line4">4</a> # If you change this key, all old sessions will become invalid!</pre></td>
           </tr>
         
           
           
           <tr class="inferred">
-            <td><pre><a name="line13">13</a> 	</pre></td>
+            <td><pre><a name="line5">5</a> # Make sure the secret is at least 30 characters and all random, </pre></td>
           </tr>
         
           
           
           <tr class="inferred">
-            <td><pre><a name="line14">14</a> end</pre></td>
+            <td><pre><a name="line6">6</a> # no regular words or you'll be exposed to dictionary attacks.</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="marked">
+            <td><pre><a name="line7">7</a> ActionController::Base.session = {</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line8">8</a>   :key         =&gt; '_onlinefitness_session',</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line9">9</a>   :secret      =&gt; 'a12858e765940917a58a86dfd4b4fa349fadc6c3959530a1de963298004bf8ad52eaa0deb65defa3195b45d45942281022d2be175f55e140f4ba836b2dfecab2'</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line10">10</a> }</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line11">11</a> </pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line12">12</a> # Use the database for sessions instead of the cookie-based default,</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line13">13</a> # which shouldn't be used to store highly confidential information</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line14">14</a> # (create the session table with &quot;rake db:sessions:create&quot;)</pre></td>
+          </tr>
+        
+          
+          
+          <tr class="inferred">
+            <td><pre><a name="line15">15</a> # ActionController::Base.session_store = :active_record_store</pre></td>
           </tr>
         
       </tbody>
     </table>
 
-    <p>Generated on Tue Nov 02 03:03:50 -0700 2010 with <a href="http://github.com/relevance/rcov">rcov 0.9.8</a></p>
+    <p>Generated on Tue Nov 02 02:53:23 -0700 2010 with <a href="http://github.com/relevance/rcov">rcov 0.9.8</a></p>
 
   </body>
 </html>

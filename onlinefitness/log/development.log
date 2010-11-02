@@ -638,3 +638,3247 @@ Rendering template within layouts/workouts
 Rendering workouts/index
   [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
 Completed in 144ms (View: 10, DB: 1) | 200 OK [http://localhost/users/1/workouts]
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (343.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (206.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (132.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (106.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (127.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (164.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (158.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (92.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (84.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (139.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (114.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (98.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (113.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (124.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (83.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (103.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (151.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 21:26:54) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 698ms (View: 641, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 21:27:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 28ms (View: 16, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-31 21:27:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 55ms (View: 41, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:30:46) [GET]
+  Parameters: {"id"=>"calendar"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:31:04) [GET]
+  Parameters: {"id"=>"calendar"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:32:56) [GET]
+  Parameters: {"id"=>"calendar"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:32:57) [GET]
+  Parameters: {"id"=>"calendar"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-31 21:33:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-31 21:33:28) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 39ms (View: 30, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:33:31) [GET]
+  Parameters: {"id"=>"new"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 21:33:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 49ms (View: 21, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:34:02) [GET]
+  Parameters: {"id"=>"show"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 21:34:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 18ms (View: 7, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 21:37:02) [GET]
+  Parameters: {"id"=>"workous"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: calendar, create, destroy, edit, index, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 21:37:08) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 46ms (View: 20, DB: 1) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 21:37:18) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 119ms (View: 29, DB: 0) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 21:37:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (3.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 04:37:21', '2010-11-01 04:37:21', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/3
+Completed in 164ms (DB: 4) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 21:37:22) [GET]
+  Parameters: {"id"=>"3", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 3 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 66ms (View: 19, DB: 2) | 200 OK [http://localhost/users/1/workouts/3]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 21:37:25) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 78ms (View: 30, DB: 2) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 21:38:30) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (58.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 202ms (View: 64, DB: 59) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 21:38:35) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 37ms (View: 23, DB: 1) | 200 OK [http://localhost/users/]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-31 21:38:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 107ms (View: 78, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 21:38:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 45ms (View: 19, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 21:38:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 21:41:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 22ms (View: 10, DB: 0) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 21:43:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 131ms (View: 111, DB: 1) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 21:43:32) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 128ms (View: 58, DB: 0) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 21:43:41) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 70ms (View: 29, DB: 0) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 21:43:44) [GET]
+  Parameters: {"id"=>"1", "user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1 AND ("workouts".user_id = 1)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Workout with ID=1 AND ("workouts".user_id = 1)):
+  app/controllers/workouts_controller.rb:46:in `edit'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 21:50:58) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 62ms (View: 27, DB: 0) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 21:51:00) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"1", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"1", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (2.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(1, NULL, '2010-11-01 04:51:01', '2010-11-01 04:51:01', '2010-11-01 00:00:00', 1, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/4
+Completed in 192ms (DB: 3) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 21:51:01) [GET]
+  Parameters: {"id"=>"4", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 4 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 35ms (View: 13, DB: 2) | 200 OK [http://localhost/users/1/workouts/4]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 21:51:03) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 40ms (View: 19, DB: 0) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 21:54:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 21:54:33) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 94ms (View: 42, DB: 0) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 21:55:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 39ms (View: 12, DB: 1) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 21:55:48) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 45ms (View: 17, DB: 0) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 21:55:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 04:55:53', '2010-11-01 04:55:53', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/5
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 21:55:53) [GET]
+  Parameters: {"id"=>"5", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 5 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 44ms (View: 10, DB: 1) | 200 OK [http://localhost/users/1/workouts/5]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 21:55:56) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 70ms (View: 23, DB: 2) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 21:56:31) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 40ms (View: 19, DB: 0) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 22:14:52) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 104ms (View: 49, DB: 1) | 200 OK [http://localhost/users/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-31 22:14:55) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 42ms (View: 32, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-31 22:14:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user"=>{"name"=>"", "birthday(1i)"=>"2010", "birthday(2i)"=>"11", "birthday(3i)"=>"1", "weight"=>"", "gender"=>"Male", "height"=>""}}
+  [4;35;1mUser Create (1.0ms)[0m   [0mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('', '2010-11-01 05:14:57', '2010-11-01 05:14:57', NULL, 'Male', '2010-11-01 00:00:00', NULL)[0m
+Redirected to http://localhost:3000/users/2
+Completed in 100ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 22:14:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 29ms (View: 13, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 22:15:00) [GET]
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 58ms (View: 31, DB: 2) | 200 OK [http://localhost/users]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 22:15:06) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (2.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 152ms (View: 84, DB: 3) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:15:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 28ms (View: 12, DB: 0) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:16:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 22:16:12) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 122ms (View: 62, DB: 1) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:16:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (2.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 05:16:15', '2010-11-01 05:16:15', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/6
+Completed in 155ms (DB: 3) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:16:15) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined method `calendar_user_workouts_path' for #<ActionView::Base:0x768c318>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_workouts_path(@user) %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:17:18) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_path' for #<ActionView::Base:0x742d328>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_path %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (198.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:17:26) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_url' for #<ActionView::Base:0x75ed918>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_url %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:23:01) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user' for #<ActionView::Base:0x73944f0>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:25:01) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_url' for #<ActionView::Base:0x7502310>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_url %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:25:06) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_path' for #<ActionView::Base:0x76b7500>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_path %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:26:42) [GET]
+  Parameters: {"id"=>"6", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 6 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_path' for #<ActionView::Base:0x745a520>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_path %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:26:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 05:26:46', '2010-11-01 05:26:46', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/7
+Completed in 135ms (DB: 1) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:26:46) [GET]
+  Parameters: {"id"=>"7", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 7 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_path' for #<ActionView::Base:0x75c5e98>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_path %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 22:26:59) [GET]
+  Parameters: {"id"=>"calendar"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=calendar):
+  app/controllers/users_controller.rb:16:in `show'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (105.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:31:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 135ms (View: 23, DB: 0) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 22:31:17) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 140ms (View: 85, DB: 1) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:31:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Create (2.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 05:31:21', '2010-11-01 05:31:21', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/8
+Completed in 167ms (DB: 3) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:31:21) [GET]
+  Parameters: {"id"=>"8", "user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 8 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_path' for #<ActionView::Base:0x669a0e0>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_path %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:38:13) [GET]
+  Parameters: {"id"=>"8", "user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 8 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined local variable or method `calendar_user_path' for #<ActionView::Base:0x5ee4ad0>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_user_path %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:41:50) [GET]
+  Parameters: {"id"=>"8", "user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 8 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 52ms (View: 13, DB: 1) | 200 OK [http://localhost/users/1/workouts/8]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:41:55) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 22:42:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 25ms (View: 12, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 22:42:49) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 50ms (View: 31, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 22:42:52) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (2.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 138ms (View: 90, DB: 3) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 22:42:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 43ms (View: 14, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:43:02) [GET]
+  Parameters: {"id"=>"5", "user_id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 5 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 100ms (View: 8, DB: 1) | 200 OK [http://localhost/users/1/workouts/5]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:43:04) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 22:46:01) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 52ms (View: 34, DB: 0) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 22:46:03) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 110ms (View: 56, DB: 1) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 22:46:50) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 107ms (View: 17, DB: 1) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:46:55) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 05:46:55', '2010-11-01 05:46:55', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/9
+Completed in 88ms (DB: 1) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:46:55) [GET]
+  Parameters: {"id"=>"9", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 9 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 44ms (View: 9, DB: 2) | 200 OK [http://localhost/users/1/workouts/9]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:46:57) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:47:56) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:48:44) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:49:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Create (2.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 05:49:40', '2010-11-01 05:49:40', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/10
+Completed in 286ms (DB: 3) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:49:40) [GET]
+  Parameters: {"id"=>"10", "user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 10 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 42ms (View: 21, DB: 1) | 200 OK [http://localhost/users/1/workouts/10]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:49:42) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 22:50:57) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 1) [0m
+Completed in 62ms (View: 42, DB: 1) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 22:51:02) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 112ms (View: 57, DB: 1) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:51:08) [GET]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/users
+Rendering users/calendar
+
+ActionView::TemplateError (new_user_workout_url failed to generate from {:action=>"new", :controller=>"workouts"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["users", :user_id, "workouts", "new"] - are they all satisfied?) on line #4 of app/views/users/calendar.html.erb:
+1: 
+2: 
+3: Sunday
+4: <%= link_to 'New workout', new_user_workout_path(@user) %>
+5: 
+6: Monday
+7: <%= link_to 'New workout', new_user_workout_path(@user) %>
+
+    (eval):21:in `new_user_workout_path'
+    app/views/users/calendar.html.erb:4
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#1 (for 127.0.0.1 at 2010-10-31 22:51:57) [GET]
+  Parameters: {"id"=>"calendar"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, login, new, show, and update):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:52:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"6", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"66", "exercise"=>"Biceps"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Create (1.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(6, NULL, '2010-11-01 05:52:54', '2010-11-01 05:52:54', '2010-11-01 00:00:00', 66, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/11
+Completed in 207ms (DB: 2) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:52:54) [GET]
+  Parameters: {"id"=>"11", "user_id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 11 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+
+ActionView::TemplateError (undefined method `calendar_path' for #<ActionView::Base:0x6397380>) on line #38 of app/views/workouts/show.html.erb:
+35: </p>
+36: 
+37: <%= link_to 'Edit', edit_user_workout_path(@user,@workout) %> |
+38: <%= link_to 'Back', calendar_path(@user) %>
+
+    app/views/workouts/show.html.erb:38
+    app/controllers/workouts_controller.rb:27:in `show'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:53:19) [GET]
+  Parameters: {"id"=>"11", "user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 11 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 35ms (View: 9, DB: 1) | 200 OK [http://localhost/users/1/workouts/11]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:53:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 47ms (View: 19, DB: 1) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 22:53:28) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 112ms (View: 60, DB: 1) | 200 OK [http://localhost/users/1/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:53:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"", "exercise"=>"Biceps"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 593ms (View: 525, DB: 1) | 200 OK [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 22:53:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"1", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 05:53:34', '2010-11-01 05:53:34', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 1)[0m
+Redirected to http://localhost:3000/users/1/workouts/12
+Completed in 108ms (DB: 2) | 302 Found [http://localhost/users/1/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:53:34) [GET]
+  Parameters: {"id"=>"12", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 12 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 134ms (View: 100, DB: 2) | 200 OK [http://localhost/users/1/workouts/12]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 22:53:37) [GET]
+  Parameters: {"id"=>"12", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 12 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 87ms (View: 54, DB: 1) | 200 OK [http://localhost/users/1/workouts/12/edit]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 22:53:42) [GET]
+  Parameters: {"id"=>"12", "user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 12 AND ("workouts".user_id = 1)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 40ms (View: 6, DB: 1) | 200 OK [http://localhost/users/1/workouts/12]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 22:53:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 29ms (View: 7, DB: 0) | 200 OK [http://localhost/users/1/calendar]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 22:53:51) [GET]
+  Parameters: {"id"=>"1", "user_id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 1 AND ("workouts".user_id = 1)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Workout with ID=1 AND ("workouts".user_id = 1)):
+  app/controllers/workouts_controller.rb:46:in `edit'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-10-31 23:22:34) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 136ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-31 23:22:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user"=>{"name"=>""}}
+  [4;36;1mUser Create (3.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('', '2010-11-01 06:22:54', '2010-11-01 06:22:54', NULL, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/users/3
+Completed in 162ms (DB: 3) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 23:22:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 57ms (View: 29, DB: 1) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-31 23:23:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user"=>{"name"=>""}}
+  [4;36;1mUser Create (1.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('', '2010-11-01 06:23:20', '2010-11-01 06:23:20', NULL, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/users/4
+Completed in 96ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 23:23:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 42ms (View: 13, DB: 1) | 200 OK [http://localhost/users/4]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 23:23:23) [GET]
+  Parameters: {"user_id"=>"4"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 4) [0m
+Completed in 94ms (View: 25, DB: 2) | 200 OK [http://localhost/users/4/workouts]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 23:23:27) [GET]
+  [4;36;1mUser Load (3.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+
+ActionView::MissingTemplate (Missing template users/index.erb in view path app/views):
+  app/controllers/users_controller.rb:7:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-31 23:27:27) [GET]
+  [4;35;1mUser Load (5.0ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 142ms (View: 113, DB: 5) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-10-31 23:27:32) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-31 23:28:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user"=>{"name"=>"hi"}}
+  [4;36;1mUser Create (2.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('hi', '2010-11-01 06:28:01', '2010-11-01 06:28:01', NULL, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/users/5
+Completed in 190ms (DB: 2) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 23:28:01) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 29ms (View: 10, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 23:28:04) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 5) [0m
+Completed in 59ms (View: 13, DB: 2) | 200 OK [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 23:28:08) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 105ms (View: 53, DB: 1) | 200 OK [http://localhost/users/5/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 23:28:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"5", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 06:28:11', '2010-11-01 06:28:11', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 5)[0m
+Redirected to http://localhost:3000/users/5/workouts/13
+Completed in 104ms (DB: 1) | 302 Found [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 23:28:11) [GET]
+  Parameters: {"id"=>"13", "user_id"=>"5"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 13 AND ("workouts".user_id = 5)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 55ms (View: 19, DB: 1) | 200 OK [http://localhost/users/5/workouts/13]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 23:28:12) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 113ms (View: 12, DB: 0) | 200 OK [http://localhost/users/5/calendar]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 23:28:18) [GET]
+  Parameters: {"id"=>"5", "user_id"=>"5"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 5 AND ("workouts".user_id = 5)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Workout with ID=5 AND ("workouts".user_id = 5)):
+  app/controllers/workouts_controller.rb:46:in `edit'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 23:28:34) [GET]
+  Parameters: {"id"=>"5", "user_id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 5 AND ("workouts".user_id = 5)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Workout with ID=5 AND ("workouts".user_id = 5)):
+  app/controllers/workouts_controller.rb:46:in `edit'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 23:28:54) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 97ms (View: 44, DB: 1) | 200 OK [http://localhost/users/5/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 23:28:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"5", "workout"=>{"expectedsets"=>"6", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"6", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mWorkout Create (1.0ms)[0m   [0;1mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(6, NULL, '2010-11-01 06:28:57', '2010-11-01 06:28:57', '2010-11-01 00:00:00', 6, 'Biceps', NULL, 5)[0m
+Redirected to http://localhost:3000/users/5/workouts/14
+Completed in 172ms (DB: 2) | 302 Found [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 23:28:57) [GET]
+  Parameters: {"id"=>"14", "user_id"=>"5"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 14 AND ("workouts".user_id = 5)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 46ms (View: 13, DB: 2) | 200 OK [http://localhost/users/5/workouts/14]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 23:28:59) [GET]
+  Parameters: {"id"=>"14", "user_id"=>"5"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mWorkout Load (1.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 14 AND ("workouts".user_id = 5)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 59ms (View: 36, DB: 1) | 200 OK [http://localhost/users/5/workouts/14/edit]
+
+
+Processing WorkoutsController#destroy (for 127.0.0.1 at 2010-10-31 23:29:04) [DELETE]
+  Parameters: {"authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "id"=>"14", "user_id"=>"5"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;36;1mWorkout Load (0.0ms)[0m   [0;1mSELECT * FROM "workouts" WHERE ("workouts"."id" = 14 AND ("workouts".user_id = 5)) [0m
+  [4;35;1mWorkout Destroy (1.0ms)[0m   [0mDELETE FROM "workouts" WHERE "id" = 14[0m
+Redirected to http://localhost:3000/users/5/workouts
+Completed in 102ms (DB: 2) | 302 Found [http://localhost/users/5/workouts/14]
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 23:29:04) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 5) [0m
+Completed in 51ms (View: 22, DB: 0) | 200 OK [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 23:29:08) [GET]
+  Parameters: {"id"=>"13", "user_id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 13 AND ("workouts".user_id = 5)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/edit
+Completed in 115ms (View: 60, DB: 2) | 200 OK [http://localhost/users/5/workouts/13/edit]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 23:29:11) [GET]
+  Parameters: {"id"=>"13", "user_id"=>"5"}
+  [4;36;1mUser Load (4.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 13 AND ("workouts".user_id = 5)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 80ms (View: 18, DB: 5) | 200 OK [http://localhost/users/5/workouts/13]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 23:29:13) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 158ms (View: 129, DB: 1) | 200 OK [http://localhost/users/5/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 23:29:24) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 97ms (View: 43, DB: 0) | 200 OK [http://localhost/users/5/workouts/new]
+
+
+Processing WorkoutsController#edit (for 127.0.0.1 at 2010-10-31 23:29:57) [GET]
+  Parameters: {"id"=>"5", "user_id"=>"5"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 5 AND ("workouts".user_id = 5)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Workout with ID=5 AND ("workouts".user_id = 5)):
+  app/controllers/workouts_controller.rb:46:in `edit'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#index (for 127.0.0.1 at 2010-10-31 23:31:41) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/index
+  [4;35;1mWorkout Load (0.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 5) [0m
+Completed in 41ms (View: 13, DB: 0) | 200 OK [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-10-31 23:31:45) [GET]
+  Parameters: {"user_id"=>"5"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 44ms (View: 17, DB: 0) | 200 OK [http://localhost/users/5/workouts/new]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 23:31:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"5", "workout"=>{"expectedsets"=>"", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"", "exercise"=>"Biceps"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 263ms (View: 240, DB: 0) | 200 OK [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#create (for 127.0.0.1 at 2010-10-31 23:31:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CB+booUORB4I4H3Mut8V0Ven4P6iSoziUjwk3fMBAYM=", "user_id"=>"5", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"1", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Create (3.0ms)[0m   [0mINSERT INTO "workouts" ("expectedsets", "actualsets", "created_at", "updated_at", "date", "expectedreps", "exercise", "actualreps", "user_id") VALUES(5, NULL, '2010-11-01 06:31:49', '2010-11-01 06:31:49', '2010-11-01 00:00:00', 5, 'Biceps', NULL, 5)[0m
+Redirected to http://localhost:3000/users/5/workouts/15
+Completed in 181ms (DB: 4) | 302 Found [http://localhost/users/5/workouts]
+
+
+Processing WorkoutsController#show (for 127.0.0.1 at 2010-10-31 23:31:49) [GET]
+  Parameters: {"id"=>"15", "user_id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts"."id" = 15 AND ("workouts".user_id = 5)) [0m
+Rendering template within layouts/workouts
+Rendering workouts/show
+Completed in 47ms (View: 11, DB: 2) | 200 OK [http://localhost/users/5/workouts/15]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 23:31:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 20ms (View: 5, DB: 1) | 200 OK [http://localhost/users/5/calendar]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-10-31 23:49:13) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+Completed in 58ms (View: 28, DB: 1) | 200 OK [http://localhost/users/5/calendar]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-31 23:49:16) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 5) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/users/5]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-11-01 20:32:58) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 619ms (View: 556, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (133.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (90.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-11-01 22:20:08) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qP6MHqG8qPvrgx7B30crbain4fKm6kNmOf4RyK2lYrI=", "user"=>{"name"=>""}}
+Rendering template within layouts/users
+Rendering users/new
+Completed in 2164ms (View: 1857, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-11-01 22:20:17) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"qP6MHqG8qPvrgx7B30crbain4fKm6kNmOf4RyK2lYrI=", "user"=>{"name"=>"hey", "birthday(1i)"=>"2010", "birthday(2i)"=>"11", "birthday(3i)"=>"2", "weight"=>"", "gender"=>"Male", "height"=>""}}
+  [4;36;1mUser Create (2.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('hey', '2010-11-02 05:20:17', '2010-11-02 05:20:17', NULL, 'Male', '2010-11-02 00:00:00', NULL)[0m
+Redirected to http://localhost:3000/users/6
+Completed in 104ms (DB: 2) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-01 22:20:17) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://localhost/users/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (96.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (81.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (103.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (64.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (132.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (191.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (107.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (176.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (103.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (139.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (58.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (112.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (80.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (206.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (116.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (152.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (81.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (138.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (96.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (75.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (79.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (57.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (74.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (73.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (302.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (74.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (74.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (81.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (73.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (66.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (66.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (98.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (66.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (71.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (83.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (91.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (74.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (214.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (131.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (105.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (98.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (126.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (113.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (146.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (59.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (61.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (81.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (148.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (148.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (97.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (181.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (378.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (98.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (84.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (77.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (134.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (116.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (190.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (96.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (124.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (131.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (131.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (131.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (114.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (123.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (67.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (108.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (131.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (104.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (203.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (174.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (137.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (163.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (139.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (114.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (121.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (122.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (99.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (98.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (106.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (64.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (73.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (131.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (181.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (118.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (123.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (148.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (177.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (182.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (249.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (115.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (194.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (102.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (84.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (107.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (106.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (102.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (112.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (187.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (150.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (73.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (86.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (139.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (161.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (121.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (149.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (164.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (121.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (135.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (180.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (155.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (133.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (129.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (131.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (115.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (118.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (126.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (134.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (121.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (116.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (193.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "birthday" datetime, "weight" integer, "height" integer, "gender" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "exercise" varchar(255), "expectedreps" integer, "expectedsets" integer, "actualreps" integer, "actualsets" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (114.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (127.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (151.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101101011056')[0m
+  [4;36;1mSQL (129.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101101010152')[0m
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-11-02 14:27:13) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 620ms (View: 565, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-11-02 14:27:17) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"yiiKT4TA+6er6lyKX7rHWTMaik8qALLqMMxyF81zxZc=", "user"=>{"name"=>"Edward"}}
+  [4;36;1mUser Create (2.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "weight", "gender", "birthday", "height") VALUES('Edward', '2010-11-02 21:27:17', '2010-11-02 21:27:17', NULL, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/users/7
+Completed in 114ms (DB: 2) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-02 14:27:17) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 84ms (View: 71, DB: 0) | 200 OK [http://localhost/users/7]
+
+
+Processing UsersController#calendar (for 127.0.0.1 at 2010-11-02 14:27:20) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+Rendering template within layouts/users
+Rendering users/calendar
+  [4;35;1mWorkout Load (1.0ms)[0m   [0mSELECT * FROM "workouts" WHERE ("workouts".user_id = 7) [0m
+Completed in 51ms (View: 35, DB: 1) | 200 OK [http://localhost/users/7/calendar]
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-11-02 14:27:22) [GET]
+  Parameters: {"user_id"=>"7"}
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 78ms (View: 55, DB: 0) | 200 OK [http://localhost/users/7/workouts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-02 14:28:12) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-11-02 14:28:16) [GET]
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 44ms (View: 19, DB: 0) | 200 OK [http://localhost/workouts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-02 14:28:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"yiiKT4TA+6er6lyKX7rHWTMaik8qALLqMMxyF81zxZc=", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"2", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+
+ActionController::RoutingError (No route matches "/users//workouts" with {:method=>:post}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-02 14:30:18) [GET]
+
+ActionController::RoutingError (No route matches "/user/7/workouts/new" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-11-02 14:30:30) [GET]
+  Parameters: {"user_id"=>"7"}
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 48ms (View: 19, DB: 0) | 200 OK [http://localhost/users/7/workouts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-02 14:30:36) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing WorkoutsController#new (for 127.0.0.1 at 2010-11-02 14:30:44) [GET]
+WARNING: Can't mass-assign these protected attributes: id
+Rendering template within layouts/workouts
+Rendering workouts/new
+Completed in 41ms (View: 18, DB: 0) | 200 OK [http://localhost/workouts/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-02 14:30:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"yiiKT4TA+6er6lyKX7rHWTMaik8qALLqMMxyF81zxZc=", "workout"=>{"expectedsets"=>"5", "date(1i)"=>"2010", "date(2i)"=>"11", "date(3i)"=>"2", "expectedreps"=>"5", "exercise"=>"Biceps"}}
+
+ActionController::RoutingError (No route matches "/users//workouts" with {:method=>:post}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

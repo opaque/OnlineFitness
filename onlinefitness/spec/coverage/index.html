@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <title>Spec C0 Coverage Information - RCov</title>
+    <link href="screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="print.css" media="print" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="rcov.js"></script>
+  </head>
+  <body>
+    <h1>Spec C0 Coverage Information - RCov</h1>
+    
+
+    <noscript><style type="text/css">.if_js { display:none; }</style></noscript>
+
+    <div class="filters if_js">
+      <fieldset>
+        <label>File Filter:</label>
+        <select id="file_filter" class="filter">
+          <option value="all_files">Show All</option>
+          <option value="C:">C:/</option><option value="CS169">CS169/</option><option value="Desktop">Desktop/</option><option value="OnlineFitness">OnlineFitness/</option><option value="School Stuff">School Stuff/</option><option value="Users">Users/</option><option value="app">app/</option><option value="config">config/</option><option value="controllers">controllers/</option><option value="helpers">helpers/</option><option value="initializers">initializers/</option><option value="models">models/</option><option value="onlinefitness">onlinefitness/</option><option value="schock">schock/</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Code Coverage Threshold:</label>
+        <select id="coverage_filter" class="filter">
+          <option value="all_coverage">Show All</option>
+          <option value="10">&lt; 10% Coverage</option><option value="20">&lt; 20% Coverage</option><option value="30">&lt; 30% Coverage</option><option value="40">&lt; 40% Coverage</option><option value="50">&lt; 50% Coverage</option><option value="60">&lt; 60% Coverage</option><option value="70">&lt; 70% Coverage</option><option value="80">&lt; 80% Coverage</option><option value="90">&lt; 90% Coverage</option><option value="100">&lt; 100% Coverage</option>
+          <option value="110">= 100% Coverage</option>
+        </select>
+      </fieldset>
+    </div>
+    
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td class="left_align">TOTAL</td>
+            <td class='right_align'><tt>830</tt></td>
+            <td class='right_align'><tt>524</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>63.49%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:63px"></div>
+            <div class="uncovered" style="width:37px"></div>
+          </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class='coverage_total'>49.43%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:49px"></div>
+            <div class="uncovered" style="width:51px"></div>
+          </div></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app controllers even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-controllers-application_controller_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/controllers/application_controller.rb</a></td>
+              <td class='right_align'><tt>10</tt></td>
+              <td class='right_align'><tt>4</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 20 30 40 50 60 70 80 90 100 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app controllers odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-controllers-users_controller_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/controllers/users_controller.rb</a></td>
+              <td class='right_align'><tt>103</tt></td>
+              <td class='right_align'><tt>72</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>30.10%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:30px"></div>
+            <div class="uncovered" style="width:70px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>13.89%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:14px"></div>
+            <div class="uncovered" style="width:86px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 20 30 40 50 60 70 80 90 100 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app controllers even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-controllers-workouts_controller_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/controllers/workouts_controller.rb</a></td>
+              <td class='right_align'><tt>92</tt></td>
+              <td class='right_align'><tt>62</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>36.96%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:37px"></div>
+            <div class="uncovered" style="width:63px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>16.13%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:16px"></div>
+            <div class="uncovered" style="width:84px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app helpers odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-helpers-application_helper_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/helpers/application_helper.rb</a></td>
+              <td class='right_align'><tt>3</tt></td>
+              <td class='right_align'><tt>2</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app helpers even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-helpers-users_helper_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/helpers/users_helper.rb</a></td>
+              <td class='right_align'><tt>2</tt></td>
+              <td class='right_align'><tt>2</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app helpers odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-helpers-workouts_helper_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/helpers/workouts_helper.rb</a></td>
+              <td class='right_align'><tt>2</tt></td>
+              <td class='right_align'><tt>2</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app models even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-models-user_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/models/user.rb</a></td>
+              <td class='right_align'><tt>6</tt></td>
+              <td class='right_align'><tt>6</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness app models odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-app-models-workout_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/app/models/workout.rb</a></td>
+              <td class='right_align'><tt>14</tt></td>
+              <td class='right_align'><tt>11</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 70 80 90 100 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness config even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-boot_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/boot.rb</a></td>
+              <td class='right_align'><tt>110</tt></td>
+              <td class='right_align'><tt>89</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>70.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:70px"></div>
+            <div class="uncovered" style="width:30px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>64.04%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:64px"></div>
+            <div class="uncovered" style="width:36px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness config odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-environment_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/environment.rb</a></td>
+              <td class='right_align'><tt>41</tt></td>
+              <td class='right_align'><tt>5</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness config initializers even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-initializers-cookie_verification_secret_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/initializers/cookie_verification_secret.rb</a></td>
+              <td class='right_align'><tt>7</tt></td>
+              <td class='right_align'><tt>1</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness config initializers odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-initializers-new_rails_defaults_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/initializers/new_rails_defaults.rb</a></td>
+              <td class='right_align'><tt>21</tt></td>
+              <td class='right_align'><tt>7</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness config initializers even">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-initializers-session_store_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/initializers/session_store.rb</a></td>
+              <td class='right_align'><tt>15</tt></td>
+              <td class='right_align'><tt>4</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 C: Users schock Desktop School Stuff CS169 OnlineFitness onlinefitness config odd">
+              <td class="left_align"><a href="Users-schock-Desktop-School Stuff-CS169-OnlineFitness-onlinefitness-config-routes_rb.html">C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness/config/routes.rb</a></td>
+              <td class='right_align'><tt>49</tt></td>
+              <td class='right_align'><tt>8</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 70 80 90 100 controllers even">
+              <td class="left_align"><a href="controllers-users_controller_spec_rb.html">controllers/users_controller_spec.rb</a></td>
+              <td class='right_align'><tt>139</tt></td>
+              <td class='right_align'><tt>115</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>68.35%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:68px"></div>
+            <div class="uncovered" style="width:32px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>64.35%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:64px"></div>
+            <div class="uncovered" style="width:36px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 40 50 60 70 80 90 100 controllers odd">
+              <td class="left_align"><a href="controllers-workouts_controller_spec_rb.html">controllers/workouts_controller_spec.rb</a></td>
+              <td class='right_align'><tt>162</tt></td>
+              <td class='right_align'><tt>124</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>40.74%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:41px"></div>
+            <div class="uncovered" style="width:59px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>37.10%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:37px"></div>
+            <div class="uncovered" style="width:63px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110  even">
+              <td class="left_align"><a href="spec_helper_rb.html">spec_helper.rb</a></td>
+              <td class='right_align'><tt>54</tt></td>
+              <td class='right_align'><tt>10</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+    <p>Generated on Tue Nov 02 02:53:22 -0700 2010 with <a href="http://github.com/relevance/rcov">rcov 0.9.8</a></p>
+
+    <script type="text/javascript">
+      $(document).ready(function(){$("#report_table").tablesorter({widgets: ['zebra'], textExtraction: 'complex'});});
+      $('.filter').change(function(){
+        ff = $('#file_filter').val();
+        cf = $('#coverage_filter').val();
+        $('table#report_table tbody tr').each(function(i){ 
+          if ((this.className.split(" ").indexOf(ff) > -1) && (this.className.split(" ").indexOf(cf) > -1)) {
+            this.style.display = "";
+          } else {
+            this.style.display = "none";
+          };
+          restripe();
+        })
+      })
+    </script>
+
+  </body>
+</html>

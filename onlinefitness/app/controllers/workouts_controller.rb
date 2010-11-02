@@ -3,7 +3,7 @@ class WorkoutsController < ApplicationController
   before_filter :get_user
   
   def get_user
-	@user = User.find(params[:user_id])
+	@user = User.create(:id =>"1")
   end
 
   # GET /workouts

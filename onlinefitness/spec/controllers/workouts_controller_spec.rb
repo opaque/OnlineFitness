@@ -8,7 +8,7 @@ describe WorkoutsController do
 
   describe "GET index" do
     it "assigns all workouts as @workouts" do
-	  pending("routing issues")
+
 
       Workout.stub(:find).with(:all).and_return([mock_workout])
       get :index
@@ -18,7 +18,6 @@ describe WorkoutsController do
 
   describe "GET show" do
     it "assigns the requested workout as @workout" do
-	  pending("routing issues")
       Workout.stub(:find).with("37").and_return(mock_workout)
       get :show, :id => "37"
       assigns[:workout].should equal(mock_workout)
