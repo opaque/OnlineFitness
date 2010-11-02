@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.login 'users/login', :controller => 'users', :action => 'login', :conditions => {:method => :get}
   map.calendar 'users/:id/calendar', :controller => 'users', :action => 'calendar', :conditions => {:method => :get}
-  map.resources :users, :has_many => [:workouts]
+  
   
   
 
