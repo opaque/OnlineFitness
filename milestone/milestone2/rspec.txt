@@ -1,13 +1,7 @@
 (in C:/Users/schock/Desktop/School Stuff/CS169/OnlineFitness/onlinefitness)
-.............*....*...................................*******************.*
+...........................................*******************.*...*....*...
 
 Pending:
-
-Workout when updating a workout should flash a notice saying 'Arguments are invalid' when an update fails (Not Yet Implemented)
-./spec/models/workout_spec.rb:107
-
-Workout when creating a workout should flash a notice saying 'Arguments are invalid' when a it fails to create a new workout (Not Yet Implemented)
-./spec/models/workout_spec.rb:80
 
 /workouts/show.html.erb renders attributes in <p> (routing issue)
 ./spec/views/workouts/show.html.erb_spec.rb:16
@@ -69,6 +63,12 @@ WorkoutsController GET index assigns all workouts as @workouts (routing issues)
 /workouts/edit.html.erb renders the edit workout form (routing issues)
 ./spec/views/workouts/edit.html.erb_spec.rb:18
 
-Finished in 3.903 seconds
+Workout when updating a workout should flash a notice saying 'Arguments are invalid' when an update fails (Not Yet Implemented)
+./spec/models/workout_spec.rb:107
 
-75 examples, 0 failures, 22 pending
+Workout when creating a workout should flash a notice saying 'Arguments are invalid' when a it fails to create a new workout (Not Yet Implemented)
+./spec/models/workout_spec.rb:80
+
+Finished in 4.392 seconds
+
+76 examples, 0 failures, 22 pending
