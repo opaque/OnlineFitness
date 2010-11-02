@@ -1,6 +1,6 @@
-<h1>Listing workouts</h1>
+<h1>Listing workouts for <%=h @user.name %></h1>
 
-
+<% if @user.workouts.count > 0 %>
 <table>
   <tr>
     <th>Date</th>
@@ -27,7 +27,9 @@
 </table>
 
 <br />
-
+<% else %>
+ <p><%=h @user.name %> hasn't added any workouts yet.</p>
+<% end %>
 
 <%= link_to 'New workout', new_user_workout_path(@user) %>
 <%= link_to 'Back', @user %>
