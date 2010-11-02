@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'active_record'
 
 describe User do
   before(:each) do
@@ -27,6 +28,14 @@ describe User do
 	  :height => 50,
 	  :gender => "Female"
 	}
+	@complete_workout = {
+      :date => Time.now,
+      :exercise => "value for exercise",
+      :expectedreps => 1,
+      :expectedsets => 1,
+      :actualreps => 1,
+      :actualsets => 1
+	}
   end
 
   it "should create a new instance given valid attributes" do
@@ -38,7 +47,7 @@ describe User do
 	  @profile = User.create(@valid_attributes)
 	  @profile.should be_valid
 	end
-	it "should create a profile" do
+	it "should create an incomplete profile" do
 	  @profile = User.create(@valid_profile)
 	  @profile.should be_valid
 	end
@@ -61,7 +70,13 @@ describe User do
 	end
   end
   
-  
-  
-  
+  describe "when deleting a user" do
+    it "should destroy user's workouts when user is destroyed" do   
+      @profile = User.create(@valid_attributes)
+      @workout = @profile.workouts.create(@complete_workout)
+      workout_id = @profile.workouts[0].id
+      @profile.destroy
+	  lambda { Workout.find(workout_id) }.should raise_error(ActiveRecord::RecordNotFound)
+	end
+end
 end
